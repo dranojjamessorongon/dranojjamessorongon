@@ -1,5 +1,5 @@
 [sorongon-portfolio.html](https://github.com/user-attachments/files/28047626/sorongon-portfolio.html)
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
