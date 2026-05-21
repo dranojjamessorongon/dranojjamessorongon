@@ -151,8 +151,8 @@ I have been delivering remote technical support across multiple branch locations
 | 📧 Email | [dramessorongon@gmail.com](mailto:dramessorongon@gmail.com) |
 | 📞 Phone / WhatsApp | +63 994 985 0210 |
 | 📍 Location | Iloilo City, Philippines |
-| 💼 LinkedIn | dranoj-james-sorongon-423a97284/(https://www.linkedin.com/in/dranoj-james-sorongon-423a97284/) |
-| 🐙 GitHub | [*Your GitHub profile URL*](https://github.com/dranojjamessorongon) |
+| 💼 LinkedIn | https://www.linkedin.com/in/dranoj-james-sorongon-423a97284/
+| 🐙 GitHub | https://github.com/dranojjamessorongon
 
 </div>
 
