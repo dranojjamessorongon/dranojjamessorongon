@@ -16,11 +16,15 @@
 
 ## 👨‍💻 About Me
 
-IT Support professional with **2+ years of hands-on experience** in enterprise networking, desktop support, and infrastructure management. I hold a **Bachelor of Science in Information Technology** from Iloilo Science and Technology University and currently serve as an IT Support Engineer at New Panay Agri-Ventures Development, Inc., where I maintain a **98% system uptime** across multi-site operations.
+I’m an IT Support Specialist who enjoys working with technology, solving technical problems, and finding practical ways to make IT environments more reliable and easier to manage.
 
-I am actively upskilling in **AI automation and workflow engineering** — building practical expertise in n8n, API integrations, webhooks, HTTP requests, and AI agent design to bridge the gap between traditional IT support and next-generation intelligent automation. I thrive in distributed team environments, deliver results independently, and communicate clearly across technical and non-technical stakeholders.
+Instead of relying only on online courses and certifications, I wanted to build this portfolio to show what I can actually do. The projects and guides in this project are based on hands-on work that I’ve done myself. Writing the documentation along the way has also helped me strengthen my troubleshooting, organization, and technical documentation skills.
 
-> *"Infrastructure that works invisibly is infrastructure built right — and automation makes it scale."*
+Before moving into IT, I worked in customer-facing roles within the consumer goods industry. Those experiences taught me the importance of clear communication, patience, active listening, and staying calm when dealing with different situations. I still carry those skills into IT support today, especially when helping users troubleshoot problems or explaining technical issues in a simple and understandable way.
+
+I’m continuously expanding my skills in areas such as Windows Server, Microsoft 365, Intune, Azure, networking, PowerShell, endpoint management, and Managed Service Provider (MSP) technologies. 
+
+My goal is to become part of a collaborative IT team where I can continue learning, solve real-world technical problems, and provide reliable support while growing both technically and professionally.
 
 ---
 
