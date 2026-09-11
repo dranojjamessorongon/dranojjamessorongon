@@ -1,0 +1,308 @@
+# macOS for IT Support Troubleshooting
+
+## Introduction
+
+Welcome to my macOS documentation.
+
+As an IT Support Professional with a strong foundation in Windows environments, I built this section to document my hands-on learning of Apple's macOS operating system.
+
+My goal is simple: to broaden my technical skill set and demonstrate my ability to support users across multiple platforms.
+
+I am currently building this portfolio and will continue updating it with step-by-step configurations, troubleshooting workflows, and screenshots as I explore macOS.
+![Screenshot](images/screenshot1175.jpg)
+
+> **Note:** Some configurations are being tested in a local environment without a primary Apple ID.
+
+---
+## Cross-Platform Troubleshooting
+
+Understanding how macOS handles local networking, permissions, and file systems makes me a more adaptable and effective IT Support professional and problem solver.
+![Screenshot](images/screenshot1174.jpg)
+
+---
+## Portfolio Objective
+
+This repository serves as my living documentation as I expand beyond a Windows-only environment and continue developing my cross-platform IT support capabilities.
+
+The goal is to build practical experience supporting both Windows and macOS environments through hands-on configuration, troubleshooting, and documentation.
+
+# Case Study 1: User Having Performance Issues with a Mac Device
+
+## Scenario
+
+A user contacted IT Support reporting slow performance on their macOS device.
+
+I reached out to the user via email and performed basic troubleshooting, such as asking the user to restart the system. However, the issue still persisted.
+![Screenshot](images/screenshot1123.jpg)
+
+---
+## Step 1: Isolate the Resource Hog (Activity Monitor)
+
+The macOS equivalent of **Task Manager** in Windows is **Activity Monitor**. It is the primary diagnostic tool used to identify processes consuming excessive system resources.
+
+### Open Activity Monitor
+
+1. Press:
+
+```text
+Command (⌘) + Space
+```
+
+2. Type:
+
+```text
+Activity Monitor
+```
+
+3. Press **Enter**.
+![Screenshot](images/screenshot1124.jpg)
+---
+## Check CPU Usage
+
+1. Open the **CPU** tab.
+2. Sort processes by **% CPU** in descending order.
+3. Look for:
+   - Third-party applications consuming excessive CPU.
+   - Stuck system processes.
+   - Any process consistently using more than **80% CPU**.
+---
+## Check Memory Usage
+
+1. Open the **Memory** tab.
+2. Review the **Memory Pressure** graph located at the bottom of the window.
+
+### Memory Pressure Colors
+
+- **Green** – RAM usage is healthy and the system has sufficient available memory.
+- **Yellow/Red** – The Mac is under memory pressure and is actively using storage (swap memory), which can significantly reduce system performance.
+# macOS IT Support Troubleshooting
+
+## Case Study 1: User Having Issues with Slow Mac Performance (Continued)
+
+### Free Up Memory (RAM)
+
+- Click on the **Memory** tab in **Activity Monitor**.
+- Select applications that are consuming excessive memory.
+- Click **Stop** or **Force Quit** to close unnecessary applications and free up RAM.
+![Screenshot](images/screenshot1125.jpg)
+![Screenshot](images/screenshot1126.jpg)
+### Disable Startup Applications
+
+- Open **System Settings**.
+- Navigate to:
+
+  **General → Login Items & Extensions**
+
+- Review the list of applications that launch automatically when the Mac starts.
+- Remove unnecessary applications using the **(-)** button to prevent them from starting automatically.
+![Screenshot](images/screenshot1127.jpg)
+### Clear User Cache
+
+- Open **Spotlight Search**.
+- Type:
+
+  ```
+  ~/Library/Caches
+  ```
+
+- Open the **Caches** folder.
+- Select unnecessary cache files or folders and move them to the **Trash**.
+![Screenshot](images/screenshot1128.jpg)
+
+---
+# Case Study 2: Mac Battery Drains Too Quickly
+
+## Scenario
+
+The user contacted IT Support because their Mac battery was draining much faster than expected.
+
+## Troubleshooting Steps
+
+### Check Battery Settings
+
+- Open **System Settings**.
+- Navigate to:
+
+  **Battery** or **Energy**
+
+- Enable **Low Power Mode** when needed to extend battery life.
+![Screenshot](images/screenshot1129.jpg)
+### Identify High Energy Applications
+
+- Open **Activity Monitor**.
+- Select the **Energy** tab.
+- Identify applications consuming excessive energy.
+- Close unnecessary applications to reduce battery usage.
+---
+# Case Study 3: Wi-Fi Keeps Disconnecting Randomly
+
+## Possible Cause
+
+This issue can occur when macOS stores multiple old Wi-Fi profiles and passwords, causing connection conflicts.
+
+## Troubleshooting
+
+- Open the **Terminal** application.
+- Continue troubleshooting by removing outdated Wi-Fi configurations or resetting the saved network settings
+
+## Wi-Fi Keeps Disconnecting Randomly
+
+Run the following command in Terminal:
+
+```bash
+sudo ifconfig en0 down && sudo ifconfig en0 up
+```
+
+![Screenshot](images/screenshot1130.jpg)
+- Enter your administrator password and press **Enter**.
+- This resets the Wi-Fi connection without restarting the Mac.
+
+---
+
+## Case Study 4: Storage Issues on macOS
+
+If a user reports low storage or the Mac is running out of space:
+
+1. Navigate to:
+   - **Apple Menu** → **System Settings** → **Storage**
+2. Review what is consuming storage space.
+3. Delete unnecessary files such as:
+   - Trash
+   - Large documents
+   - Other unwanted files
+1. Enable **Empty Trash Automatically** if appropriate.
+![Screenshot](images/screenshot1131.jpg)
+
+**Keyboard shortcut to bypass Trash when deleting:**
+
+- **Option + Command + Delete**
+
+### Remove Old Application Support Files
+
+1. Open **Finder**.
+2. From the menu bar, select **Go**.
+3. Scroll down and choose **Go to Folder**.
+4. Enter:
+
+```text
+/Library/Application Support
+```
+
+5. Review old application support files that are no longer needed.
+6. Delete unnecessary files (administrator password may be required).
+![Screenshot](images/screenshot1132.jpg)
+
+---
+## Case Study 5: External Drive Is Not Being Recognized
+
+If a user's external drive is not appearing:
+
+1. Open **Finder**.
+2. Go to **Finder Settings** (or **Finder Preferences**, depending on the macOS version).
+3. Verify that **External disks** are enabled under the appropriate tab.
+4. Confirm that the external drive is selected to appear in Finder.
+![Screenshot](images/screenshot1133.jpg)
+
+This is one of the first checks an IT support technician should perform before moving on to more advanced troubleshooting.
+
+# Verify External Drive Mount Status in macOS
+
+If an external drive is not being recognized, verify that it is mounted correctly.
+
+## Steps
+
+1. Open **Spotlight Search** (`Command + Space`).
+2. Type **Disk Utility** and press **Enter**.
+3. In the left pane, locate the external drive.
+4. Check whether the drive is **Mounted**.
+5. If the drive is not mounted, select it and click **Mount**.
+6. Once mounted successfully, verify that the drive appears in **Finder**.
+![Screenshot](images/screenshot1134.jpg)
+## Expected Result
+
+- The external drive is mounted successfully.
+- The drive becomes accessible through **Finder**.
+- The user can access files stored on the external drive.
+---
+# Printer Setup & Troubleshooting on macOS
+
+## Scenario
+
+A user contacts IT Support because they are unable to print from their Mac. The printer may not be detected, remains offline, or print jobs are stuck in the queue.
+
+---
+## Add a Printer
+
+1. Open **System Settings**.
+2. Navigate to **Printers & Scanners**.
+3. Click **Add Printer, Scanner, or Fax**.
+4. Select the printer from the list.
+5. Click **Add**.
+6. Print a test page.
+![Screenshot](images/screenshot1176.jpg)
+---
+## Printer Is Offline
+
+### Verify Network Connectivity
+
+- Ensure the Mac and printer are connected to the same Wi-Fi network.
+- Ping the printer's IP address if applicable.
+### Restart Devices
+
+- Restart the printer.
+- Restart the Mac.
+- Retry printing.
+---
+## Clear the Print Queue
+
+1. Open **System Settings**.
+2. Go to **Printers & Scanners**.
+3. Select the printer.
+4. Open the print queue.
+5. Cancel any stuck print jobs.
+6. Retry printing.
+---
+## Reset the Printing System
+
+If the issue persists:
+
+1. Open **Printers & Scanners**.
+2. Right-click in the printer list.
+3. Select **Reset Printing System**.
+4. Re-add the printer.
+---
+## Update Printer Drivers
+
+- Install the latest printer driver from the manufacturer's website if macOS does not automatically install one.
+- Run **Software Update** to install available printer updates.
+---
+## Check Printer Permissions
+
+- Verify the user has permission to print.
+- Ensure the printer is shared correctly if connected through a print server.
+---
+## Test Printing
+
+Print a document from:
+
+- TextEdit
+- Preview
+- Safari
+
+If only one application fails to print, the issue is application-specific rather than printer-related.
+
+---
+## Escalation
+
+Escalate the issue if:
+
+- The printer is not detected after basic troubleshooting.
+- Hardware faults are suspected.
+- Multiple users are affected.
+- Network printing services are unavailable.
+
+
+
+
+
+
